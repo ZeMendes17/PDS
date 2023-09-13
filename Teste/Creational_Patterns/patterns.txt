@@ -1,0 +1,113 @@
+Factory Method:
+            - Tem a responsabilidade de criar objetos de um determinado tipo
+
+            O Factory Method é um padrão de projeto de criação que permite às classes delegar para
+            subclasses decidirem qual objeto concreto deve ser criado. 
+
+            O Factory Method define um método que deve ser usado para criar objetos em vez de uma
+            chamada direta ao construtor (operador new).
+
+Abstract Factory:
+            - Provê uma interface para criação de famílias de objetos
+
+            O Abstract Factory é um padrão de projeto de criação que permite que você produza famílias
+            de objetos relacionados sem ter que especificar suas classes concretas.
+
+            O Abstract Factory define uma interface para criar todos os produtos que são parte da família
+            de objetos.
+
+            O Abstract Factory implementa fábricas concretas que produzem objetos da família de produtos.
+
+Builder:
+            - Permite a criação de objetos complexos passo a passo sem ter vários construtores
+
+            Separa a construção de um objeto complexo da sua representação, de forma que o mesmo
+            processo de construção possa criar diferentes representações
+
+            O Builder é um padrão de projeto de criação que permite que você construa objetos complexos
+            passo a passo. O padrão permite que você produza diferentes tipos e representações de um
+            objeto usando o mesmo código de construção.
+
+            O Builder salva o estado de construção do objeto em um objeto separado chamado director.
+
+Singleton:
+            - Garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela
+
+            O Singleton é um padrão de projeto de criação que permite que você garanta que uma classe
+            tenha apenas uma instância, enquanto provê um ponto de acesso global para essa instância.
+
+            O Singleton resolve dois problemas ao mesmo tempo, violando o princípio de responsabilidade
+            única:
+
+            - Garante que uma classe tenha apenas uma instância
+            - Fornecer um ponto de acesso global para essa instância
+
+            O Singleton tem quase os mesmos prós e contras que as variáveis globais. Embora eles sejam
+            muito úteis, eles violam o princípio de responsabilidade única e introduzem um ponto de
+            acesso global em seu código, o que, na maioria dos casos, é uma má ideia.
+
+            Você pode usar o Singleton quando uma classe em seu programa tiver que ter exatamente uma
+            instância disponível para todos os clientes; por exemplo, um objeto de base de dados único
+            compartilhado por diferentes partes do programa.
+
+            O Singleton deve ser usado com cautela, pois introduz um ponto de acesso global a uma
+            instância, de modo que, em alguns casos, ele pode ser substituído por algo mais simples,
+            como uma variável global.
+
+Object Pool:
+            - Permite a reutilização de objetos que são criados com custo computacional alto
+
+            O Object Pool é um padrão de projeto de criação que usa um conjunto de objetos inicializados
+            e prontos para uso disponíveis para serem emprestados e devolvidos quando necessário. Um
+            Object Pool melhora o desempenho se os objetos inicializados forem pesados.
+
+            O Object Pool é uma solução útil quando você precisa de um número limitado de objetos
+            pesados. Se você está trabalhando com um grande número de objetos leves, é mais fácil criar
+            e destruir esses objetos conforme necessário.
+
+Prototype:
+            - Permite a criação de novos objetos a partir da cópia de um objeto existente
+
+            O Prototype é um padrão de projeto de criação que permite copiar objetos existentes sem
+            fazer seu código depender de suas classes.
+
+            O Prototype declara uma interface comum para todos os objetos que suportam a clonagem.
+            Essa interface permite copiar objetos sem acoplar o código às classes deles.
+
+            Você pode usar o Prototype quando seu código não souber de antemão os tipos e dependências
+            exatos dos objetos com os quais ele deve funcionar. O Prototype permite copiar objetos
+            existentes independentemente de suas classes, desde que eles implementem uma interface
+            clonável.
+
+            O Prototype pode ajudar a reduzir o número de subclasses. Em alguns casos, pode ser mais
+            conveniente instalar um objeto protótipo no momento da inicialização e cloná-lo sempre que
+            precisar de objetos semelhantes.
+
+            O Prototype pode ser usado junto com o Composite quando os componentes do padrão precisarem
+            ser inicializados com um objeto do mesmo tipo que o componente.
+
+            O Prototype pode ser usado junto com o Builder para construir objetos complexos que não
+            correspondem diretamente às suas subclasses.
+
+            O Prototype pode ser usado junto com o Abstract Factory para criar objetos que dependem de
+            uma família de fábricas.
+
+            O Prototype pode ser usado junto com o Registry para obter uma instância do protótipo e
+            cloná-la quando necessário.
+
+            O Prototype pode ser usado junto com o Memento para copiar o estado do objeto e retorná-lo
+            quando necessário.
+
+            O Prototype pode ser usado junto com o Command para salvar o histórico de comandos em um
+            histórico de área de transferência.
+
+            O Prototype pode ser usado junto com o Decorator para copiar o estado de um objeto antes de
+            aplicar o decorador e restaurá-lo depois.
+
+            O Prototype pode ser usado junto com o State para salvar o estado do objeto antes de
+            executar uma operação e restaurá-lo depois.
+
+            O Prototype pode ser usado junto com o Strategy para configurar o contexto com um objeto
+            protótipo que contém um algoritmo a ser executado.
+
+            O Prototype pode

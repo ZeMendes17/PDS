@@ -1,0 +1,72 @@
+Chain of responsibility:
+            - Processar pedido em serie ou encontrar o objeto que pode tratar a requisição.
+
+            Uma forma de passar uma requisição entre uma cadeia de objetos.
+            Receber o objeto e passar para o próximo objeto da cadeia, que por sua vez, faz o mesmo e assim por diante.
+            Levando ao processamento de uma série de objetos sem que o remetente tenha conhecimento.
+
+            Exemplo: Um sistema de abertura de chamados, onde o chamado é aberto e passado para o primeiro nível de atendimento,
+            caso não seja resolvido, é passado para o segundo nível e assim por diante.
+
+            Exemplo 2: Um sistema de compras, onde o pedido é passado para o primeiro nível de aprovação, caso não seja aprovado,
+            é passado para o segundo nível e assim por diante.
+
+Command:
+            - Permite utilizando um objeto para alterar o comportamento de um método e executá-lo.
+
+            Encapsular uma solicitação como um objeto, desta forma permitindo parametrizar clientes com diferentes solicitações,
+            enfileirar ou fazer o registro (log) de solicitações e suportar operações que podem ser desfeitas.
+
+            Exemplo: Um sistema de pedidos, onde o pedido é passado para o objeto que irá executar o comando de salvar o pedido,
+            que por sua vez, irá executar o comando de salvar o cliente e assim por diante.
+
+Iterator:
+            - Permir acessar objetos de uma coleção. Permite percorrer os elementos de uma coleção sem expor sua representação subjacente.
+
+            Fornecer um meio de acessar, sequencialmente, os elementos de um objeto agregado sem expor sua representação subjacente.
+
+Mediator:
+            - Comunicação simplificada entre classes.Permite reduzir as dependências entre objetos, promovendo o baixo acoplamento.
+
+            Define um objeto que encapsula a forma como um conjunto de objetos interage.
+            Ele promove o baixo acoplamento ao evitar que os objetos se refiram uns aos outros explicitamente e permite variar suas interações independentemente.
+
+Memento:
+            - Permite salvar e restaurar o estado anterior de um objeto sem revelar os detalhes de sua implementação.
+
+            Sem violar o encapsulamento, capturar e externalizar um estado interno de um objeto, de maneira que o objeto possa ser restaurado para esse estado mais tarde.
+
+Null Object:
+            - Permite evitar verificar se um objeto é nulo, ao invés de usar um objeto nulo que não faz nada.
+
+            Sem violar o encapsulamento, capturar e externalizar um estado interno de um objeto, de maneira que o objeto possa ser restaurado para esse estado mais tarde.
+
+Observer:
+            - Permite que um objeto publique mudanças de estado. Outros objetos se inscrevem para receber notificações sobre essas mudanças.
+
+            Define uma dependência um-para-muitos entre objetos, de maneira que quando um objeto muda de estado, todos os seus dependentes são notificados e atualizados automaticamente.
+
+State:
+            - Permite que um objeto altere seu comportamento quando seu estado interno muda. O objeto parecerá ter mudado sua classe.
+
+            Permite que um objeto altere seu comportamento quando seu estado interno muda.
+            Parece que o objeto mudou sua classe.
+
+Strategy:
+            - Permite definir uma família de algoritmos, encapsular cada uma delas e torná-las intercambiáveis.
+            Permite que o algoritmo varie independentemente dos clientes que o utilizam.
+
+            Define uma família de algoritmos, encapsula cada um deles e os torna intercambiáveis.
+            A estratégia permite que o algoritmo varie independentemente dos clientes que o utilizam.
+
+Template Method:
+            - Permite que subclasses redefinam certos passos de um algoritmo sem alterar a estrutura do próprio algoritmo.
+
+            Define o esqueleto de um algoritmo dentro de um método, transferindo alguns de seus passos para as subclasses.
+            O template method permite que as subclasses redefinam certos passos de um algoritmo sem alterar a estrutura do próprio algoritmo.
+
+Visitor:
+            - Permite que uma nova operação seja definida sem alterar as classes dos elementos sobre os quais opera.
+
+            Representa uma operação a ser executada nos elementos de uma estrutura de objetos.
+            O visitor permite definir uma nova operação sem mudar as classes dos elementos sobre os quais opera.
