@@ -1,3 +1,3 @@
 # PDS
 
-PDS classes of 2022/2023
+Software Design and Patterns classes of 2022/2023
